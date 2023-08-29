@@ -2,8 +2,65 @@
     width: 100%;
     height: 170px;
     border-radius: 10px;
+    -webkit-box-shadow: 11px 7px 5px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 11px 7px 5px -3px rgba(0,0,0,0.75);
+    box-shadow: 11px 7px 5px -3px rgba(0,0,0,0.75);
+}
+.sharewrapper{
+    padding: 10px;
+}
+.sharetop{
+    display: flex;
+    align-items: center;
+}
+.shareInput{
+    border: none;
+    width: 80%;
+    height: 30px;
+    font-size: 20px;
+}
+.shareInput:focus{
+    outline: none;
+}
+.sharehr{
+    margin: 20px;
 }
 .shareProfileimg{
-    width: 32px;
-    height: 32px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+.shareBottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.shareoptions{
+    display: flex;
+    margin-left: 20px;
+}
+.shareoption{
+    display: flex;
+    margin-right: 15px;
+    align-items: center;
+    cursor: pointer;
+}
+.shareicon{
+    font-size: 18px;
+    margin: 2px;
+}
+.shareoptiontext{
+    font-size: 14px;
+    font-weight: 500;
+}
+.sharebutton{
+    border: none;
+    padding: 7px;
+    border-radius: 5px;
+    background-color: green;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
 }

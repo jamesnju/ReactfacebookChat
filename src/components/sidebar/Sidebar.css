@@ -63,3 +63,10 @@
     object-fit: cover;
     margin-right: 10px;
 }
+.sharebutton{
+    border: none;
+    padding: 7px;
+    border-radius: 5px;
+    background-color: lightgreen;
+    font-weight: 500;
+}
