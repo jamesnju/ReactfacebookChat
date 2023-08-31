@@ -1,10 +1,11 @@
 .sidebar{
     flex: 3;
-    background-color: goldenrod;
     height: calc(100vh - 50px);
     color:#fff;
     height: 100vh;
     overflow-y: scroll;
+    position: sticky;
+    top: 50px;
 }
 ::-webkit-scrollbar{
     width: 5px;
@@ -20,7 +21,7 @@
 
 .SidebarWrapper{
     padding: 20px;
-    background-color: gray;
+    background-color: rgb(2, 55, 73);
 
 }
 .siderlist{
@@ -50,23 +51,4 @@
     margin: 0;
     list-style: none;
 }
-.sidebarFriend{
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
 
-}
-.siderbarfriendImg{
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-right: 10px;
-}
-.sharebutton{
-    border: none;
-    padding: 7px;
-    border-radius: 5px;
-    background-color: lightgreen;
-    font-weight: 500;
-}

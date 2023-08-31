@@ -1,7 +1,8 @@
 import React from 'react'
 import './Sidebar.css'
-import { Bookmark, Chat, Event, GolfCourse, Group, HelpOutline, PlayCircleFilledOutlined, QuestionMark, RssFeed, School, VideoChatRounded, WorkOutline } from '@mui/icons-material'
-
+import { Bookmark, Chat, Event, Group, HelpOutline, PlayCircleFilledOutlined, RssFeed, School, WorkOutline } from '@mui/icons-material';
+import { Users } from '../../Dammy';
+import Friend from '../closeFriends/Friend';
 export default function Sidebar() {
   return (
     <div className="sidebar">
@@ -48,62 +49,9 @@ export default function Sidebar() {
             <button className="sidebarbutton">Show More</button>
             <hr className='sidebarHr'/>
             <ul className="sidebarFriendList">
-                <li className="sidebarFriend">
-                    <img src="/assets/man.jpg" alt="" className="siderbarfriendImg" />
-                    <span className="sidebarFriendName">james nju</span>
-                </li>
-                <li className="sidebarFriend">
-                    <img src="/assets/man.jpg" alt="" className="siderbarfriendImg" />
-                    <span className="sidebarFriendName">james nju</span>
-                </li>
-                <li className="sidebarFriend">
-                    <img src="/assets/man.jpg" alt="" className="siderbarfriendImg" />
-                    <span className="sidebarFriendName">james nju</span>
-                </li>
-                <li className="sidebarFriend">
-                    <img src="/assets/man.jpg" alt="" className="siderbarfriendImg" />
-                    <span className="sidebarFriendName">james nju</span>
-                </li>
-                <li className="sidebarFriend">
-                    <img src="/assets/man.jpg" alt="" className="siderbarfriendImg" />
-                    <span className="sidebarFriendName">james nju</span>
-                </li>
-                <li className="sidebarFriend">
-                    <img src="/assets/man.jpg" alt="" className="siderbarfriendImg" />
-                    <span className="sidebarFriendName">james nju</span>
-                </li>
-                <li className="sidebarFriend">
-                    <img src="/assets/man.jpg" alt="" className="siderbarfriendImg" />
-                    <span className="sidebarFriendName">james nju</span>
-                </li>
-                <li className="sidebarFriend">
-                    <img src="/assets/man.jpg" alt="" className="siderbarfriendImg" />
-                    <span className="sidebarFriendName">james nju</span>
-                </li>
-                <li className="sidebarFriend">
-                    <img src="/assets/man.jpg" alt="" className="siderbarfriendImg" />
-                    <span className="sidebarFriendName">james nju</span>
-                </li>
-                <li className="sidebarFriend">
-                    <img src="/assets/man.jpg" alt="" className="siderbarfriendImg" />
-                    <span className="sidebarFriendName">james nju</span>
-                </li>
-                <li className="sidebarFriend">
-                    <img src="/assets/man.jpg" alt="" className="siderbarfriendImg" />
-                    <span className="sidebarFriendName">james nju</span>
-                </li>
-                <li className="sidebarFriend">
-                    <img src="/assets/man.jpg" alt="" className="siderbarfriendImg" />
-                    <span className="sidebarFriendName">james nju</span>
-                </li>
-                <li className="sidebarFriend">
-                    <img src="/assets/man.jpg" alt="" className="siderbarfriendImg" />
-                    <span className="sidebarFriendName">james nju</span>
-                </li>
-                <li className="sidebarFriend">
-                    <img src="/assets/man.jpg" alt="" className="siderbarfriendImg" />
-                    <span className="sidebarFriendName">Shine nju</span>
-                </li>
+                {Users.map((u) => (
+                    <Friend key={u.id} user={u} />
+                ))}
             </ul>
         </div>
     </div>

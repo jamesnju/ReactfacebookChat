@@ -1,3 +1,76 @@
 .rightbar{
     flex: 4;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 100vh;
+    position: sticky;
+    top: 50px;
+
+}
+.rightBarWrapper{
+    padding: 20px 20px 0 0;
+}
+.birthDayImg{
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+}
+.birthDayContainer{
+    display: flex;
+    align-items: center;
+}
+.rightBarTitle{
+    padding: 10px;
+}
+.birthDayText{
+    font-weight: 300;
+    font-size: 15px;
+
+}
+.rightBarAd{
+    width: 100%;
+    border-radius: 10px;
+    margin: 30px;
+}
+.rightBarFriendList{
+    padding: 0;
+    margin: 0;
+}
+.rightbarTitle{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.rightBarInfo{
+    margin-bottom: 30px;
+}
+.rightBarInfoItem{
+    margin-bottom: 10px;
+}
+.rightBarInfoKey{
+    font-weight: 400;
+    margin-right: 15px;
+    color: aquamarine;
+
+}
+.rightBarInfoValue{
+    font-weight: 300;
+
+}
+.rightBarFollowings{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.rightBarFollowing{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.rightBarFollowingImg{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+
 }
