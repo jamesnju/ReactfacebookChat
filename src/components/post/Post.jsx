@@ -9,8 +9,12 @@ const [like, setLike] = useState(post.like)
 const [isLiked, setIsLiked] = useState(false)
 
 const likeHandler = () =>{
-    setLike(isLiked ? like-1 : like+1)
-    setIsLiked(!isLiked)
+    setLike((prevLike) => (isLiked ? prevLike + 1 : prevLike + 1));
+    setIsLiked(!isLiked);
+}
+const dislikeHandler = ()=>{
+    setLike((prevLike) => (isLiked ? prevLike - 1 : prevLike - 1));
+    setIsLiked(!isLiked);
 }
 
 
@@ -34,8 +38,8 @@ const likeHandler = () =>{
                 </div>
                 <div className="postBottom">
                     <div className="postBottomLeft">
-                        <img src="/assets/like.png" onClick={likeHandler} alt="" className="likeIcon" />
-                        <img src="/assets/dislike.png" onClick={likeHandler} alt="" className="likeIcon" />
+                        <img src={process.env.PUBLIC_URL + "/assets/like.png"} onClick={likeHandler} alt="" className="likeIcon" />
+                        <img src={process.env.PUBLIC_URL + "/assets/dislike.png"} onClick={dislikeHandler} alt="" className="likeIcon" />
                         <span className="postLikeCounter">{like} people likes it</span>
                     </div>
                     <div className="postBottomRight">

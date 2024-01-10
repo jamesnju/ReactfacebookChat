@@ -35,8 +35,7 @@ export default function Navbar() {
           </div>
         </div>
         <div className="profileimg">
-          <img src="/assets/woman.jpg" alt="profile" className='profileimg' />
-
+        <img src={process.env.PUBLIC_URL + '/assets/woman.jpg'} alt="profile" className='profileimg' />
           </div>
       </div>
     

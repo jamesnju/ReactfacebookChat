@@ -8,10 +8,10 @@ export default function Rightbar({profile}) {
     return(
       <>
           <div className="birthDayContainer">
-            <img src="/assets/gift1.jpg" alt="" className="birthDayImg" />
+            <img src={process.env.PUBLIC_URL + "/assets/gift1.jpg"} alt="" className="birthDayImg" />
             <span className="birthDayText"><b>John</b> and 20 other <b>friends</b> have <b>birthday</b></span>
           </div>
-          <img src="/assets/ad.jpg" alt="" className='rightBarAd'/>
+          <img src={process.env.PUBLIC_URL + "/assets/ad.jpg"} alt="" className='rightBarAd'/>
           <h4 className="rightBarTitle">Online Friends</h4>
             <ul className="rightBarFriendList">
               {Users.map((u) => (
@@ -44,7 +44,7 @@ export default function Rightbar({profile}) {
         <h4 className="rightbarTitle">user information</h4>
         <div className="rightBarFollowings">
           <div className="rightBarFollowing">
-            <img src="assets/woman.jpg" alt="" className="rightBarFollowingImg" />
+            <img src={process.env.PUBLIC_URL + "assets/woman.jpg"} alt="" className="rightBarFollowingImg" />
             <span className="rightBarFollowingName"> Shine</span>
           </div>
           <div className="rightBarFollowing">

@@ -14,9 +14,8 @@ export default function Profile() {
         <div className="profileRight">
             <div className="profileRightTop">
                 <div className="profileCover">
-
-                    <img className='profileCoverImg' src="assets/iphone.jpg" alt="" />
-                    <img className='profileUserImg' src="assets/man.jpg" alt="" />
+                    <img src={process.env.PUBLIC_URL + "/assets/iphone.jpg"} className='profileCoverImg'  alt="Iphone" />
+                    <img className='profileUserImg' src={process.env.PUBLIC_URL + "/assets/man.jpg"} alt="" />
                 </div>
                 <div className="profileInfo">
                     <h4 className='profileInfoName'>James Njuguna</h4>
